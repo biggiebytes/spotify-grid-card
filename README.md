@@ -8,7 +8,7 @@
 
 A reusable Lovelace custom card that renders a Spotify media header + a 4-column (configurable) image grid of playlists. Tapping any tile calls `media_player.play_media` with your chosen entity.
 
-![Spotify Grid Card main](Home-assist2.png)
+![Spotify Grid Card main](spotify-grid-card.png)
 ![Spotify Grid Card alt view](Homeassist1.png)
 
 
