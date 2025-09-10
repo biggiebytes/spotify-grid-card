@@ -6,7 +6,7 @@
 [![issues](https://img.shields.io/github/issues/biggiebytes/spotify-grid-card)](https://github.com/biggiebytes/spotify-grid-card/issues)
 [![stars](https://img.shields.io/github/stars/biggiebytes/spotify-grid-card?style=social)](https://github.com/biggiebytes/spotify-grid-card)
 
-A reusable Lovelace custom card that renders a Spotify media header + a 4-column (configurable) image grid of playlists. Tapping any tile calls `media_player.play_media` with your chosen entity.
+A reusable Lovelace custom card that renders a Spotify media header + a 4-column (configurable) image grid of playlists. Tapping any tile calls `media_player.play_media` with your chosen entity. Adds volume and visual time remaining.
 
 ![Spotify Grid Card main](spotify-grid-card.png)
 ![Spotify Grid Card alt view](Homeassist1.png)
