@@ -45,7 +45,6 @@ class SpotifyGridCard extends LitElement {
   render() {
     const { items, columns, aspect_ratio } = this.config;
     const itemWidth = `calc(${100 / columns}% - 10px)`;
-    const itemHeight = `calc(${itemWidth} * ${aspect_ratio})`;
 
     return html`
       <div class="grid">
@@ -53,7 +52,11 @@ class SpotifyGridCard extends LitElement {
           (item) => html`
             <div
               class="item"
-              style="width: ${itemWidth}; padding-bottom: calc(${itemWidth} * ${aspect_ratio}); background-image: url(${item.image});"
+              style="
+                width: ${itemWidth};
+                padding-bottom: calc(${itemWidth} * ${aspect_ratio});
+                background-image: url('${item.image}');
+              "
               @click=${() => this._handleClick(item.uri)}
             >
               <div class="play-overlay">▶</div>
