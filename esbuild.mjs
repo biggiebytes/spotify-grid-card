@@ -1,16 +1,10 @@
-import { build } from "esbuild";
+import esbuild from "esbuild";
 
-const watch = process.argv.includes("--watch");
-
-await build({
+esbuild.build({
   entryPoints: ["src/spotify-grid-card.ts"],
   bundle: true,
   minify: true,
-  sourcemap: true,
-  outfile: "dist/spotify-grid-card.js",
+  target: ["es2020"],
   format: "esm",
-  target: ["es2022"],
-  treeShaking: true,
-  logLevel: "info",
-  watch,
-});
+  outfile: "dist/spotify-grid-card.js",
+}).catch(() => process.exit(1));
