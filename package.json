@@ -5,6 +5,8 @@
     "build": "node esbuild.mjs"
   },
   "devDependencies": {
-    "esbuild": "^0.18.0"
+    "custom-card-helpers": "^1.9.0",
+    "esbuild": "^0.28.1",
+    "lit": "^3.3.1"
   }
 }

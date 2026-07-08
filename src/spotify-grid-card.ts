@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
-import { HomeAssistant, LovelaceCardConfig } from "custom-card-helpers";
+import type { HomeAssistant, LovelaceCardConfig } from "custom-card-helpers";
 
 interface SpotifyGridCardItem {
   image: string;
